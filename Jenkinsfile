@@ -3,13 +3,13 @@ pipeline{
   stages{
     stage('Checkout'){
       steps{
-        git 'https://github.com/Sheetal012345/my-first-repo'
+        git 'https://github.com/Sheetal012345/my-first-repo.git'
       }
       
     }
   stage('Publish'){
     steps{
-      publishHTML{[
+      publishHTML([
         allowmissing:true,
           alwaysLinktoLastBuild:false,
           keepAll:false,
@@ -17,7 +17,7 @@ pipeline{
           reportFiles:'Hello.html',
         reportName:'myhtmlfile',
         ]
-      }
+      )
     }
   }
 }}
