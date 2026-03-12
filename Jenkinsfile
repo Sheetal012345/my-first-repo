@@ -1,6 +1,6 @@
 pipeline{
   agent any
-  stages
+  stages{
     stage('Checkout'){
       steps{
         git 'https://github.com/Sheetal012345/my-first-repo'
