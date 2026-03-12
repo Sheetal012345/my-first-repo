@@ -13,7 +13,7 @@ pipeline{
         allowmissing:true,
           alwaysLinktoLastBuild:false,
           keepAll:false,
-          reportDir:'.';
+          reportDir:'.',
           reportFiles:'Hello.html',
         reportName:'myhtmlfile',
         ]
